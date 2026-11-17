@@ -21,30 +21,47 @@
   </a>
 </p>
 
-Full Stack .NET Developer specializing in C# and ASP.NET Core with React and TypeScript, with hands-on experience designing and delivering software for a paying client, including a multi-tenant HR platform owned end to end. Experienced in Clean Architecture, SOLID principles, RESTful API design, authentication and authorization, and relational database design with SQL Server and PostgreSQL.
+Full Stack .NET Developer specializing in C# and ASP.NET Core with React and TypeScript. I took a multi-tenant HR platform from requirements to delivery for a commercial client, and I care about Clean Architecture, SOLID principles, RESTful API design, authentication and authorization, and relational database design with SQL Server and PostgreSQL.
 
 ## Experience
 
 ### Freelance Full Stack .NET Developer — Revive HR
 
-**Sep 2026 – Nov 2026** · Client work
+**Sep 2026 – Nov 2026** · Multi-tenant HR platform for gym businesses
 
-Multi-tenant HR management platform for gym businesses. Independently owned requirements, architecture, development, and delivery for a paying client.
+Owned the engagement end to end — requirements, architecture, implementation, testing, and delivery — for a commercial client.
 
-- **Authorization** — designed a dynamic authorization model allowing each tenant to define custom roles, permissions, and access rules based on its organizational structure and workflows.
-- **Architecture** — architected the backend with ASP.NET Core 8, EF Core, PostgreSQL, and Clean Architecture, then built RESTful APIs with a permission-aware React/TypeScript frontend for employee management, attendance, and HR operations.
-- **Face recognition** — integrated a face-recognition attendance module, connecting an existing face-ID model to employee check-in and per-branch attendance tracking.
-- **Testing** — built a 700+ test automated xUnit suite (integration and security) running the ASP.NET Core API against a real PostgreSQL test database, covering payroll, attendance, requests, tenant isolation, and JWT/CORS security.
+- **Authorization** — designed a dynamic model in which each tenant defines its own roles, permissions, and access rules around its organizational structure.
+- **Delivery** — shipped REST APIs and a permission-aware React/TypeScript frontend for employee management, attendance, and HR operations, plus a face-recognition module linking an existing face-ID model to per-branch check-in.
+- **Quality** — backed it with a 700+ test xUnit suite (integration and security) running the API against a real PostgreSQL database, covering payroll, attendance, requests, tenant isolation, and JWT/CORS security.
+
+## Selected work — Revive HR
+
+The hard part was never HR CRUD — it was making tenancy an architectural boundary instead of a filter bolted onto queries: each tenant owns its roles, permissions, and access rules, and every request is authorized against them below the API surface.
+
+```mermaid
+flowchart LR
+  SPA["React 19 + TypeScript SPA<br/>permission-aware UI · EN/AR RTL"] --> API["ASP.NET Core 8 REST API<br/>JWT authentication"]
+  API --> SVC["Service layer<br/>permission + tenant scope"]
+  SVC --> DOM["Domain"]
+  SVC --> EF["EF Core 8"]
+  EF --> PG[("PostgreSQL")]
+  BIO["Biometrics<br/>face recognition"] --> SVC
+```
+
+Delivered with 40 EF Core migrations, 700+ xUnit tests across integration and security suites running against a real PostgreSQL database, and Playwright end-to-end suites covering both API and UI flows.
 
 ## Technical skills
 
 | Area | Stack |
 | --- | --- |
-| **Backend** | C# · ASP.NET Core 8 · Web API · EF Core · LINQ · REST APIs · SignalR · Dependency Injection · xUnit |
-| **Frontend** | React · Next.js · Angular · TypeScript · HTML · CSS · Tailwind CSS |
-| **Architecture** | Clean Architecture · SOLID · OOP · Design Patterns · Repository · Unit of Work · Specification |
-| **Databases & security** | SQL Server · PostgreSQL · Redis · JWT · ASP.NET Identity · OAuth 2.0 · RBAC |
-| **DevOps & tools** | Docker · Kubernetes · AWS · Terraform · Jenkins · CI/CD · Git · GitHub · Postman · Swagger |
+| **Backend** | C# · ASP.NET Core 8 · EF Core · REST APIs · SignalR · xUnit |
+| **Frontend** | React · TypeScript · Next.js · Angular · Tailwind CSS |
+| **Architecture** | Clean Architecture · SOLID · Repository · Unit of Work · Specification |
+| **Data & security** | PostgreSQL · SQL Server · Redis · JWT · ASP.NET Identity · OAuth 2.0 · RBAC |
+| **DevOps & tools** | Docker · Kubernetes · AWS · Terraform · Jenkins · CI/CD · Git |
+
+Also comfortable with: LINQ · Swagger/OpenAPI · Postman · HTML/CSS · GitHub
 
 ## Technical projects
 
@@ -91,3 +108,6 @@ Arabic (native) · English (B2 — professional working proficiency)
 - 💼 [LinkedIn](https://www.linkedin.com/in/youssef-eemad)
 - 🐙 [GitHub](https://github.com/youssefemaad)
 - 📄 [View my CV (PDF)](https://github.com/youssefemaad/youssefemaad/blob/main/assets/CV-Youssef-Emad.pdf)
+- 📧 [eyoussef228@gmail.com](mailto:eyoussef228@gmail.com)
+
+**Open to full stack .NET opportunities · Cairo, Egypt**
