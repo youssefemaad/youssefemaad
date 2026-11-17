@@ -16,6 +16,9 @@
   <a href="https://github.com/youssefemaad">
     <img src="https://img.shields.io/badge/GitHub-youssefemaad-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub — youssefemaad" />
   </a>
+  <a href="https://github.com/youssefemaad/youssefemaad/raw/main/assets/CV-Youssef-Emad.pdf">
+    <img src="https://img.shields.io/badge/Download_CV-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download CV (PDF)" />
+  </a>
 </p>
 
 Full Stack .NET Developer specializing in C# and ASP.NET Core with React and TypeScript, with hands-on experience designing and delivering software for a paying client, including a multi-tenant HR platform owned end to end. Experienced in Clean Architecture, SOLID principles, RESTful API design, authentication and authorization, and relational database design with SQL Server and PostgreSQL.
@@ -87,3 +90,4 @@ Arabic (native) · English (B2 — professional working proficiency)
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/youssef-eemad)
 - 🐙 [GitHub](https://github.com/youssefemaad)
+- 📄 [View my CV (PDF)](https://github.com/youssefemaad/youssefemaad/blob/main/assets/CV-Youssef-Emad.pdf)
