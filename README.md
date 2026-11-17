@@ -25,6 +25,5 @@ I build reliable APIs, e-commerce systems, and modern web applications. I enjoy 
 ## Let's connect
 
 - [GitHub](https://github.com/youssefemaad)
-- [LinkedIn](https://www.linkedin.com/in/youssefemaad)
 
 Thanks for visiting my profile!
