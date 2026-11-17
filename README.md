@@ -47,7 +47,7 @@ Multi-tenant HR management platform for gym businesses. Independently owned requ
 
 ### PulseGym — Smart Fitness Management Platform
 
-**Dec 2025 – Jun 2026** · Graduation project · [Live demo](https://pulsegym-two.vercel.app) · [Code](https://pulsegym-two.vercel.app/)
+**Dec 2025 – Jun 2026** · Graduation project · [Live demo](https://pulsegym-two.vercel.app)
 
 Led backend development in a 5-member team, delivering a RESTful API with 150+ endpoints covering users, memberships, workouts, bookings, subscriptions, and payments.
 
